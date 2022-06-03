@@ -1,31 +1,58 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerReact = styled.div`
     .image {
+        height: 900px;
+
+        @media (max-width: 1100px) {
+            height: 800px;
+        }
+        
+        @media (max-width: 700px) {
+            height: 600px;
+        }
+
+        @media (max-width: 500px) {
+            height: 400px;
+        }
+    }
+
+    .titulo {
         display: flex;
-        position: relative;
-        background:url('https://www.jwservice.com.br/wp-content/uploads/2020/06/jw01.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 93.3vh;
         justify-content: center;
-        align-items: center;
-    }
+        padding-top: 20%;
+        font-size: 70px;
 
-    .text {
-        color: #EEEEEE;
-
-        .titulo {
-            font-size: 90px;
-            padding-left: 50px;
+        @media (max-width: 1100px) {
+            font-size: 50px;
+        }
+        
+        @media (max-width: 700px) {
+            font-size: 35px;
         }
 
-        .sub-titulo {
-            font-size: 60px;
+        @media (max-width: 500px) {
+            font-size: large;
         }
     }
 
+    .sub-titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+
+        @media (max-width: 1100px) {
+            font-size: 35px;
+        }
+        
+        @media (max-width: 700px) {
+            font-size: 25px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: large;
+        }
+    }
 `;
 
 

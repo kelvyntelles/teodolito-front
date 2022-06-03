@@ -1,30 +1,30 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerReact = styled.div`
+    min-height: 100vh;
     display: block;
-    width: 100%;
-    height: 96vh;
+    padding-bottom: 10px;
 
     h1 {
-        padding: 50px 0 0 100px;
-        font-size: 70px;
+        padding-left: 50px;
+        padding-top: 50px;
+        font-size: 60px;
+        margin-bottom: 40px;
         color: #373A3C;
-    }
 
-    .area-texto {
-        display: flex;
-        justify-content: center;
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
     }
 
     .texto {
-        border-style: solid;
-        border-width: 1px;
-        border-color: #EEEEEE;
-        margin: 30px;
-        padding: 15px 20px 15px 20px;
-        max-width: 610px;
-        color: #000000;
-        font-size: 24px;
-        font-family: cursive;
+        padding: 30px;
+        min-height: 500px;
+        font-size: large;
+        margin-bottom: 5px;
+    }
+
+    .text-left {
+        margin-right: 50px;
     }
 `;

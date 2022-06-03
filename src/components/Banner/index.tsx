@@ -1,15 +1,25 @@
-import { Container } from "./style"
+import { ContainerReact } from "./style"
+import { Card, CardImg, CardImgOverlay, CardTitle, CardText } from "reactstrap"
 
 export const Banner = () => {
     return (
-        <Container>
-            <div className="image">
-                <div className="text">
-                    <a className="titulo">Teodolito online</a>
-                    <br />
-                    <a className="sub-titulo">Uma forma inivadora de fazer</a>
-                </div>
-            </div>
-        </Container>
+        <ContainerReact>
+            <Card inverse>
+                <CardImg
+                alt="Card image cap"
+                src="https://picsum.photos/318/270"
+                width="100%"
+                className="image"
+                />
+                <CardImgOverlay>
+                <CardTitle className="titulo" tag="h1">
+                    Teodolito online
+                </CardTitle>
+                <CardTitle className="sub-titulo" tag="h5">
+                    Uma nova forma inovadora de fazer
+                </CardTitle>
+                </CardImgOverlay>
+            </Card>
+        </ContainerReact>
     )
 }
